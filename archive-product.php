@@ -49,6 +49,7 @@ do_action( 'woocommerce_before_main_content' );
 	?>
 </header>
 								<div class="col-lg-4 order-1 order-lg-2">
+									/*-----Widget Area------*/
 									<?php if ( is_active_sidebar( 'pricebar' )  ) : ?>
 										<aside id="secondary" class="sidebar widget-area" role="complementary">
 											<?php dynamic_sidebar( 'pricebar' ); ?>
@@ -121,7 +122,7 @@ do_action( 'woocommerce_sidebar' );
 <?php } 	
 	else 
 	{ 
-			?>
+	        ?>
 			<header class="woocommerce-products-header">
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
